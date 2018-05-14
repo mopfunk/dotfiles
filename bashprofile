@@ -1,0 +1,15 @@
+set -o vi
+
+alias dom='reset && neofetch'
+alias ui_reset='killall --KILL SystemUIServer'
+alias mac-update='sudo softwareupdate -l'
+alias mac-upgrade='sudo softwareupdate -ia'
+alias rng='ranger'
+alias grw='cd ~/Documents/russian/homework/russian_hwtex/'
+alias gsc='cd ~/Documents/scripts/bash/'
+alias gtc='calcurse'
+
+# Setting PATH for Python 3.5
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
