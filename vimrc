@@ -175,6 +175,9 @@ autocmd FileType html inoremap ;i <em></em><ESC>4hi
 autocmd FileType html inoremap ;H <head></head><ESC>6hi
 autocmd FileType html inoremap ;B <body></body><ESC>6hi
 autocmd FileType html inoremap ;! <!DOCTYPE html>
+autocmd FileType html inoremap ;li <li></li><ESC>4hi
+autocmd FileType html inoremap ;ol <ol></ol><ESC>4hi
+autocmd FileType html inoremap ;ul <ul></ul><ESC>4hi
 
 "------------------------------------------------------------
 " LaTeX specific stuff
