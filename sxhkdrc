@@ -1,6 +1,8 @@
-#
-# wm independent hotkeys
-#
+#==========#
+# wm hotkeys
+# author (extra): mopfunk
+# https://github.com/mopfunk
+#==========#
 
 # terminal emulator
 super + Return
@@ -10,13 +12,61 @@ super + Return
 super + @space
 	dmenu_run
 
+# launch thunar
+super + f
+	thunar
+
+# launch qutebrowser
+super + q
+	qutebrowser
+
+# launch ranger
+super + e
+	urxvt -e ranger
+
+# launch firefox
+super + shift + f
+	firefox
+
+# launch alsamixer
+super + a
+	urxvt -e alsamixer
+
+# launch cmus
+super + c
+	urxvt -e cmus
+
+# launch htop
+super + shift + p
+	urxvt -e htop
+
+# launch signal
+super + s
+	signal-desktop
+
+# launch filezilla
+super + z
+	filezilla
+
+# launch vim
+super + v
+	urxvt -e vim
+
+# launch focuswriter
+super + y
+	focuswriter
+
+# launch a terminal clock
+super + m
+	urxvt -e tty-clock -cs
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
 
-#
+#==========#
 # bspwm hotkeys
-#
+#==========#
 
 # quit bspwm normally
 super + alt + Escape
@@ -31,28 +81,28 @@ super + m
 	bspc desktop -l next
 
 # send the newest marked node to the newest preselected node
-super + y
-	bspc node newest.marked.local -n newest.!automatic.local
+#super + y
+#	bspc node newest.marked.local -n newest.!automatic.local
 
 # swap the current node and the biggest node
-super + g
-	bspc node -s biggest
+#super + g
+#	bspc node -s biggest
 
-#
-# state/flags
-#
+#==========#
+## state/flags
+#==========#
 
 # set the window state
-super + {t,shift + t,s,f}
-	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+super + {t,shift + t,s}
+	bspc node -t {tiled,pseudo_tiled,floating}
 
 # set the node flags
-super + ctrl + {m,x,y,z}
-	bspc node -g {marked,locked,sticky,private}
+#super + ctrl + {m,x,y,z}
+#	bspc node -g {marked,locked,sticky,private}
 
-#
-# focus/swap
-#
+#==========#
+## focus/swap
+#==========#
 
 # focus the node in the given direction
 super + {_,shift + }{h,j,k,l}
@@ -84,9 +134,9 @@ super + {o,i}
 super + {_,shift + }{1-9,0}
 	bspc {desktop -f,node -d} '^{1-9,10}'
 
-#
-# preselect
-#
+#==========#
+## preselect
+#==========#
 
 # preselect the direction
 super + ctrl + {h,j,k,l}
@@ -104,9 +154,9 @@ super + ctrl + space
 super + ctrl + shift + space
 	bspc query -N -d | xargs -I id -n 1 bspc node id -p cancel
 
-#
-# move/resize
-#
+#==========#
+## move/resize
+#==========#
 
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
