@@ -1,0 +1,24 @@
+# .bashrc
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+PS1='[\u@\h \W]\$ '
+alias rng='ranger'
+alias dom='reset && neofetch'
+alias xbps-install='sudo xbps-install'
+alias xbps-remove='sudo xbps-remove'
+alias xbps-query='sudo xbps-query'
+alias neton='cd ~/Documents/bash/ && ./network_up.sh && cd'
+alias zzz='sudo zzz'
+alias gsc='cd ~/Documents/bash/'
+alias bat='acpi -i'
+alias tick='tty-clock -cs'
+alias gip='ip addr | grep inet'
+alias vpn='cd /etc/openvpn/ && clear && figlet DA3MONS NEVER STOP &&  pwd'
+
+#export PATH="${PATH}:${HOME}/.local/bin/"
+
+
+
