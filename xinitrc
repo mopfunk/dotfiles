@@ -1,7 +1,9 @@
 sxhkd &
 compton &
 xrdb ~/.Xresources &
-xmodmap ~/.Xmodmap &
+polybar example &
 xfce4-power-manager &
+xinput --disable 10
 wal -R &
+setxkbmap -option grp:alt_shift_toggle us,ru && xmodmap ~/.Xmodmap &
 exec bspwm

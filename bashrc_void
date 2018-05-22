@@ -17,7 +17,10 @@ alias gsc='cd ~/Documents/bash/'
 alias bat='acpi -i'
 alias tick='tty-clock -cs'
 alias gip='ip addr | grep inet'
-alias vpn='cd /etc/openvpn/ && clear && figlet -t DA3MONS NEVER STOP && pwd && echo && echo'
+alias vpn='cd /etc/openvpn/ && clear && figlet -t DA3MONS NEVER STOP && pwd && ls && echo && echo'
+alias ovpn='sudo openvpn'
+alias gh='cd && figlet HOME'
+alias kpb='killall polybar'
 
 #export PATH="${PATH}:${HOME}/.local/bin/"
 
