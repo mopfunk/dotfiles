@@ -16,13 +16,25 @@ super + @space
 super + f
 	thunar
 
+# launch neomutt
+super + b
+	urxvt -e neomutt
+
 # launch qutebrowser
 super + q
 	qutebrowser
 
+# launch qalc
+super + shift + q
+	urxvt -e qalc
+
 # launch ranger
 super + e
 	urxvt -e ranger
+
+# launch emacs
+super + shift + c
+	urxvt -e emacs
 
 # launch firefox
 super + shift + f
@@ -55,6 +67,10 @@ super + z
 # launch vim
 super + v
 	urxvt -e vim
+
+# launch sublime text 3
+super + ctrl + s
+	subl
 
 # launch focuswriter
 super + y
