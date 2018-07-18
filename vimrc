@@ -21,6 +21,7 @@ set showcmd
  
 set ignorecase
 set smartcase
+set hlsearch
  
 set backspace=indent,eol,start
  
@@ -66,6 +67,9 @@ nnoremap <C-L> :nohl<CR><C-L>
 " keep cursor in middle of screen
 nnoremap k kzz
 nnoremap j jzz
+
+nnoremap : ;
+nnoremap ; :
 "------------------------------------------------------------
 " Set spellchecker on
 map <F6> :setlocal spell! spelllang=en_us<CR>
