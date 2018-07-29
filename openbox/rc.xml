@@ -120,14 +120,9 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
-    <names>
-      <name>terms</name>
-      <name>text</name>
-      <name>web</name>
-      <name>media</name>
-    </names>
+    <names/>
     <popupTime>875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
        desktops.  Set this to 0 to disable the popup. -->
@@ -320,9 +315,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>st</name>
+          <name>urxvt</name>
         </startupnotify>
-        <command>st</command>
+        <command>urxvt</command>
       </action>
     </keybind>
     <keybind key="W-q">
@@ -338,18 +333,18 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-	  <name>dmenu</name>
-	</startupnotify>
-	<command>dmenu</command>
+          <name>dmenu</name>
+        </startupnotify>
+        <command>dmenu</command>
       </action>
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>pcmanfm</name>
+          <name>thunar</name>
         </startupnotify>
-        <command>pcmanfm</command>
+        <command>thunar</command>
       </action>
     </keybind>
   </keyboard>
