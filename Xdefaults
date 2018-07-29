@@ -1,0 +1,15 @@
+urxvt*depth: 32
+URxvt.font: xft:hack:size=10
+
+# black transparency
+#urxvt*background: rgba:1900/1900/1900/c800
+
+# solarized dark transparency
+#urxvt*background: rgba:0000/1e00/2700/c800
+
+# solarized light transparency
+#urxvt*background: rgba:fc00/f400/dc00/c800
+
+
+URxvt.scrollBar: false
+
