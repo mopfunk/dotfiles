@@ -8,9 +8,6 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias rng='ranger'
 alias dom='cd && clear && figlet MOPFUNK && echo ~~ I Will Endure To The End ~~ && echo && echo'
-alias xi='sudo xbps-install'
-alias xr='sudo xbps-remove'
-alias xq='sudo xbps-query -Rs'
 alias gsc='cd ~/Documents/bash/'
 alias bat='acpi -i'
 alias tick='tty-clock -cs'
@@ -24,8 +21,20 @@ alias engru='setxkbmap -option grp:alt_shift_toggle us,ru && xmodmap ~/.Xmodmap'
 alias pacman='sudo pacman'
 alias ipv6down='sudo sysctl -p /etc/sysctl.conf'
 alias nf='neofetch'
+alias byebye='killall Xorg'
+alias v='vim'
+alias gdf='cd ~/Documents/dotfiles/ && ls'
+alias xr='xrdb ~/.Xresources'
+alias takeout='rm -fr ~/.local/share/Trash/files/*'
+
+# vim file edits
+alias vxr='vim ~/.Xresources'
+alias vbr='vim ~/.bashrc'
+alias vxd='vim ~/.Xdefaults'
+
+alias gcs='cd ~/colorschemes/'
 
 #export PATH="${PATH}:${HOME}/.local/bin/"
 
-figlet MOPFUNK && echo ~~ I Will Endure To The End ~~ && echo && echo
+figlet PERDURABO && echo ~~ I Will Endure To The End ~~ && echo && echo
 
