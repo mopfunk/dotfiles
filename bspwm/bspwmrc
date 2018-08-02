@@ -2,20 +2,26 @@
 
 sxhkd &
 
-bspc monitor -d I II III IV V VI
+bspc monitor -d terms text web files music vpn
 
-bspc config border_width         3
-bspc config window_gap           10
-bspc config active_border_color  "#000000"
+bspc config border_width         1
+bspc config window_gap           0
+bspc config active_border_color  \#8ce10b
+bspc config focused_border_color \#8ce10b
+bspc config normal_border_color  \#3e3e3e
 
-bspc config split_ratio          0.52
+bspc config split_ratio          0.50
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+bspc config top_padding 27
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+#bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Firefox desktop='^3'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a qutebrowser desktop='^3'
-bspc rule -a signal-desktop desktop='^4'
+bspc rule -a deadbeef desktop='^5'
+bspc rule -a emacs desktop='^2'
+
+$HOME/.config/polybar/launch.sh

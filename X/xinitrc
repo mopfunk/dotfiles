@@ -1,8 +1,10 @@
 sxhkd &
 compton &
+xfce4-power-manager &
 xrdb ~/.Xresources &
-polybar example &
+nm-applet &
 xfce4-power-manager &
 xinput --disable 10
+feh --bg-fill ~/Pictures/backgrounds/purpmacish.jpg
 setxkbmap -option grp:alt_shift_toggle us,ru && xmodmap ~/.Xmodmap &
 exec bspwm

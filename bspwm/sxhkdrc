@@ -8,13 +8,17 @@
 super + Return
 	urxvt
 
+# launch st
+super + shift + Return
+	st
+
 # program launcher
 super + @space
 	dmenu_run
 
-# launch thunar
+# launch xfe
 super + f
-	thunar
+	xfe
 
 # launch neomutt
 super + b
@@ -34,7 +38,7 @@ super + e
 
 # launch emacs
 super + shift + c
-	urxvt -e emacs
+	emacs
 
 # launch firefox
 super + shift + f
@@ -51,6 +55,14 @@ super + p
 # launch cmus
 super + c
 	urxvt -e cmus
+
+# launch spotify
+super + shift + s
+	spotify
+
+# launch deadbeef
+super + d
+	deadbeef
 
 # launch htop
 super + shift + p
@@ -80,9 +92,17 @@ super + y
 super + m
 	urxvt -e tty-clock -cs
 
+# launch newsboat rss reader
+super + n
+	urxvt -e newsboat
+
 # launch this file
 super + shift + x
 	urxvt -e vim ~/.config/sxhkd/sxhkdrc
+
+# launch bspwmrc
+super + alt + ctrl + x
+	urxvt -e vim ~/.config/bspwm/bspwmrc
 
 # make sxhkd reload its configuration files:
 super + Escape
