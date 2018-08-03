@@ -6,11 +6,11 @@
 
 # terminal emulator
 super + Return
-	urxvt
-
-# launch st
-super + shift + Return
 	st
+
+# launch urxvt
+super + shift + Return
+	urxvt
 
 # program launcher
 super + @space
@@ -22,7 +22,7 @@ super + f
 
 # launch neomutt
 super + b
-	urxvt -e neomutt
+	st -e neomutt
 
 # launch qutebrowser
 super + q
@@ -30,11 +30,11 @@ super + q
 
 # launch qalc
 super + shift + q
-	urxvt -e qalc
+	st -e qalc
 
 # launch ranger
 super + e
-	urxvt -e ranger
+	st -e ranger
 
 # launch emacs
 super + shift + c
@@ -46,7 +46,7 @@ super + shift + f
 
 # launch alsamixer
 super + a
-	urxvt -e alsamixer
+	st -e alsamixer
 
 # launch pavucontrol
 super + p
@@ -54,7 +54,7 @@ super + p
 
 # launch cmus
 super + c
-	urxvt -e cmus
+	st -e cmus
 
 # launch spotify
 super + shift + s
@@ -66,7 +66,11 @@ super + d
 
 # launch htop
 super + shift + p
-	urxvt -e htop
+	st -e htop
+
+# launch top
+super + alt + p
+	st -e top
 
 # launch signal
 super + shift + s
@@ -78,7 +82,7 @@ super + z
 
 # launch vim
 super + v
-	urxvt -e vim
+	st -e vim
 
 # launch sublime text 3
 super + ctrl + s
@@ -90,19 +94,19 @@ super + y
 
 # launch a terminal clock
 super + m
-	urxvt -e tty-clock -cs
+	st -e tty-clock -cs
 
 # launch newsboat rss reader
 super + n
-	urxvt -e newsboat
+	st -e newsboat
 
 # launch this file
 super + shift + x
-	urxvt -e vim ~/.config/sxhkd/sxhkdrc
+	st -e vim ~/.config/sxhkd/sxhkdrc
 
 # launch bspwmrc
 super + alt + ctrl + x
-	urxvt -e vim ~/.config/bspwm/bspwmrc
+	st -e vim ~/.config/bspwm/bspwmrc
 
 # make sxhkd reload its configuration files:
 super + Escape

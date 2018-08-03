@@ -7,7 +7,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias rng='ranger'
-alias dom='cd && clear && figlet MOPFUNK && echo ~~ I Will Endure To The End ~~ && echo && echo'
+alias dom='cd && clear && figlet perdurabo && echo && echo ~~ I Will Endure To The End ~~ && echo && echo'
 alias gsc='cd ~/Documents/bash/'
 alias bat='acpi -i'
 alias tick='tty-clock -cs'
@@ -26,15 +26,23 @@ alias v='vim'
 alias gdf='cd ~/Documents/dotfiles/ && ls'
 alias xr='xrdb ~/.Xresources'
 alias takeout='rm -fr ~/.local/share/Trash/files/*'
+alias neo='neomutt'
+alias gcs='cd ~/colorschemes/'
+alias sbrc='source .bashrc && reset && dom'
+alias mst='cd ~/st && sudo make clean install && cd && echo ~~ DONE, reload ~~'
 
 # vim file edits
 alias vxr='vim ~/.Xresources'
 alias vbr='vim ~/.bashrc'
 alias vxd='vim ~/.Xdefaults'
-
-alias gcs='cd ~/colorschemes/'
+alias vstc='vim ~/st/config.h'
+alias vmr='vim ~/.vimrc'
+alias vrng='vim ~/.config/ranger/rc.conf'
 
 #export PATH="${PATH}:${HOME}/.local/bin/"
 
-figlet PERDURABO && echo ~~ I Will Endure To The End ~~ && echo && echo
+# bash color
+PS1='\[\033[00;35m\]\u\[\033[00;31m\]@\[\033[00;33m\]\h\[\033[01;34m\]:\[\033[01;36m\]\w\[\033[01;37m\]$ \[\033[00m\]'
 
+
+figlet perdurabo && echo && echo ~~ I Will Endure To The End ~~ && echo && echo
