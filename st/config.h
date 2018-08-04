@@ -173,7 +173,6 @@ static Shortcut shortcuts[] = {
 	{ TERMMOD,              XK_Prior,       zoom,           {.f = +1} },
 	{ TERMMOD,              XK_Next,        zoom,           {.f = -1} },
 	{ TERMMOD,              XK_Home,        zoomreset,      {.f =  0} },
-	{ ShiftMask,            XK_C,           clipcopy,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      clippaste,      {.i =  0} },
 	{ MODKEY|ShiftMask,	XK_Insert,	clippaste,	{.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
