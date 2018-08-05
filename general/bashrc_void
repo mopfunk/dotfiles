@@ -7,15 +7,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 alias rng='ranger'
-alias dom='cd && clear && figlet MOPFUNK && echo ~~ I Will Endure To The End ~~ && echo && echo'
-alias xi='sudo xbps-install'
-alias xr='sudo xbps-remove'
-alias xq='sudo xbps-query -Rs'
-alias xbps-install='sudo xbps-install'
-alias xbps-remove='sudo xbps-remove'
-alias xbps-query='sudo xbps-query -Rs'
-alias neton='cd ~/Documents/bash/ && ./network_up.sh'
-alias zzz='sudo zzz'
+alias dom='cd && clear && figlet perdurabo && echo && echo ~~ I Will Endure To The End ~~ && echo && echo'
 alias gsc='cd ~/Documents/bash/'
 alias bat='acpi -i'
 alias tick='tty-clock -cs'
@@ -25,10 +17,34 @@ alias ovpn='sudo openvpn'
 alias gh='cd && figlet HOME'
 alias kpb='killall polybar'
 alias go='startx'
-alias da3mons='ssh da3mons@192.168.1.190'
 alias engru='setxkbmap -option grp:alt_shift_toggle us,ru && xmodmap ~/.Xmodmap'
+alias xbps-install='sudo xbps-install'
+alias xbps-query='sudo xbps-query -Rs'
+alias xbps-remove='sudo xbps-remove'
+alias ipv6down='sudo sysctl -p /etc/sysctl.conf'
+alias nf='neofetch'
+alias byebye='killall Xorg'
+alias v='vim'
+alias gdf='cd ~/Documents/dotfiles/ && ls'
+alias xr='xrdb ~/.Xresources'
+alias takeout='rm -fr ~/.local/share/Trash/files/*'
+alias neo='neomutt'
+alias gcs='cd ~/colorschemes/'
+alias sbrc='source .bashrc && reset && dom'
+alias mst='cd ~/st && sudo make clean install && cd && echo ~~ DONE, reload ~~'
+
+# vim file edits
+alias vxr='vim ~/.Xresources'
+alias vbr='vim ~/.bashrc'
+alias vxd='vim ~/.Xdefaults'
+alias vstc='vim ~/st/config.h'
+alias vmr='vim ~/.vimrc'
+alias vrng='vim ~/.config/ranger/rc.conf'
 
 #export PATH="${PATH}:${HOME}/.local/bin/"
 
-figlet MOPFUNK && echo ~~ I Will Endure To The End ~~ && echo && echo
+# bash color
+PS1='\[\033[00;35m\]\u\[\033[00;31m\]@\[\033[00;33m\]\h\[\033[01;34m\]:\[\033[01;36m\]\w\[\033[01;37m\]$ \[\033[00m\]'
 
+
+figlet perdurabo && echo && echo ~~ I Will Endure To The End ~~ && echo && echo
