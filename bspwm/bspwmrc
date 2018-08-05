@@ -2,7 +2,7 @@
 
 sxhkd &
 
-bspc monitor -d terms text web files music vpn
+bspc monitor -d terms text web files music media vpn
 
 bspc config border_width         1
 bspc config window_gap           0
